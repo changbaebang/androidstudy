@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Hello World</string>
     <string name="action_settings">Settings</string>
+    <string name="action_unbind_call">Unbind Service Start</string>
+    <string name="action_unbind_stop">Unbind Service End</string>
+    <string name="action_bind">Bind</string>
+    <string name="action_unbind">Unbind</string>
+    <string name="action_bind_call">Bind Call</string>
 </resources>

@@ -27,6 +27,11 @@
                 <action android:name="com.example.bangchangbae.changetext" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>

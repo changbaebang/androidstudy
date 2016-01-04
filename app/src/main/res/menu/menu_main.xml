@@ -7,4 +7,31 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_unbind_call"
+        android:orderInCategory="100"
+        android:title="@string/action_unbind_call"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_unbind_stop"
+        android:orderInCategory="100"
+        android:title="@string/action_unbind_stop"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bind"
+        android:orderInCategory="100"
+        android:title="@string/action_bind"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_unbind"
+        android:orderInCategory="100"
+        android:title="@string/action_unbind"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bind_call"
+        android:orderInCategory="100"
+        android:title="@string/action_bind_call"
+        app:showAsAction="never" />
 </menu>
