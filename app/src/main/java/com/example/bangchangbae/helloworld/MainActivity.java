@@ -1,9 +1,11 @@
 package com.example.bangchangbae.helloworld;
 
 import android.content.ComponentName;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.design.widget.FloatingActionButton;
@@ -115,5 +117,10 @@ public class MainActivity extends AppCompatActivity {
     public void setText(String text){
         TextView textView = (TextView)findViewById(R.id.textview);
         textView.setText(text);
+        ContentValues values = new ContentValues();
+        values.put(MyContentProvider.name, text);
+        Uri uri = getContentResolver().insert(MyContentProvider.CONTENT_URI, values);
+        if(uri != null)
+            Toast.makeText(MainActivity.this, "insert greeting to my content provider", Toast.LENGTH_SHORT).show();
     }
 }
